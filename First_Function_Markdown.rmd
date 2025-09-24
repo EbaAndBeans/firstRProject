@@ -1,0 +1,26 @@
+---
+title: "First function Markdown"
+author: "Ikenna Ojoboh"
+date: "2025-09-24"
+output: html_document
+---
+
+#Wave Plot
+```{r}
+x <- seq(0,20,0.01)
+y <- numeric(0)
+
+for(i in x){
+  y <- c(y,sin(i))
+}
+
+sin_df <- data.frame(x,y)
+
+head(sin_df)
+
+plot(sin_df)
+```
+
+\begin{equation}
+\sin^2(x) + \cos^2(x) =1
+\end{equation}
